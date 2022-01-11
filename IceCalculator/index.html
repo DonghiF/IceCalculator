@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>login</title>
+   
+  </head>
+  <body>
+    <form action="/login_signin/login/" method="post" id="form">
+      <input type="hidden" name="field" id="field" value="0" onchange="setValue(this)">
+      <label>Username: </label>
+      <input type="text" name="username" onchange="setValue(this)">
+      <label>Password: </label>
+      <input type="text" name="password" onchange="setValue(this)">
+	  <hr>
+	  <button type="submit">Login</button>
+	  
+    </form>
+  </body>
+</html>
