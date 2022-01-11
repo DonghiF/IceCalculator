@@ -1,0 +1,64 @@
+1) Sign-in
+	end-point: /signIn   POST
+	
+	input:  nome:(Stringa)
+		cognome:(Stringa)
+		username(Stringa)
+		password(Stringa)
+		
+
+	output: "Registrazione avvenuta con successo!"
+
+2) Login
+	end-point: /login   POST
+	
+	input:	username(Stringa)
+		password(Stringa)
+		
+
+	output: "Benvenuto" nome + cognome 
+
+3) Visualizza le proprie competizioni
+	end-point: /Competitions   POST
+	
+	input:  nome:(Stringa)
+		cognome:(Stringa)
+		username(Stringa)
+		password(Stringa)
+		
+
+	output: "Benvenuto" nome + cognome 
+
+
+4) myCompetitions
+	end-point: /competition   POST
+	
+	input://
+	output: "These are your saved scores" + savedScores 
+
+
+5) removeScore
+	end-point: /removeScore   POST
+	
+	input:  name:(stringa)
+		
+	output: "il punteggio" + name + "è stato eliminato"
+
+6) scoreCalculator
+	end-point: /scoreCalculator  POST
+	
+	input:  element:(lista)  
+		goe: (int)
+		mistake: (lista)
+		interpretation of the music: (double)
+		performance: (double)
+		
+	output: "Your total score is" + score 
+
+7) saveScore
+	end-point: /saveScore   POST
+	
+	input: //
+
+	output: "Your score has been saved"
+
