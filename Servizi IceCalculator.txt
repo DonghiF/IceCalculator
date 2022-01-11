@@ -1,0 +1,80 @@
+1) signin
+	end-point: /signIn   POST
+	
+	input:  nome:(Stringa)
+		cognome:(Stringa)
+		username(Stringa)
+		password(Stringa)
+		
+
+	output: "Registrazione avvenuta con successo!"
+
+2) login
+	end-point: /login   POST
+	
+	input:	username(Stringa)
+		password(Stringa)
+		
+
+	output: "Benvenuto" nome + cognome 
+
+
+3) myScores
+	end-point: /competitions   POST
+	
+	input://
+	output: "These are your saved scores" + savedScores 
+
+
+4) removingScore
+	end-point: /removingScore   POST
+	
+	input:  name:(stringa)
+		
+	output: "il punteggio" + name + "è stato eliminato"
+
+5) scoreCalculator
+	end-point: /scoreCalculator  POST
+	
+	input: //
+		
+	output: "You can add a technical element, delete it or calculate the components point" 
+
+6) elementAdding
+	end-point: /elementAdding  POST
+	
+	input:  element:(lista)  
+		goe: (int)
+		mistake: (lista)
+		
+	output: "your element has been added"
+
+7) elementRemoving
+	end-point: /elementRemoving   POST
+	
+	input:  elementName:(stringa)
+		
+	output: "il punteggio" + elementName + "è stato eliminato"
+
+8) componentsCalculator
+	end-point: /componentsCalculator  POST
+	
+	input:  interpretation of the music: (double)
+		performance: (double)
+		
+	output: "the components point has been added"
+
+9) calculate
+	end-point: /calculate  POST
+	
+	input://
+		
+	output: "your total score is" + totalScore
+
+10) saveScore
+	end-point: /saveScore   POST
+	
+	input: scoreName: (stringa)
+
+	output: "Your score has been saved"
+
